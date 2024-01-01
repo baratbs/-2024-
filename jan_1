@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+   typedef struct jsmntok{
+        int start;
+        int end;
+        int type;
+        int size;
+    }jsmntok;
+    jsmntok t[128];
+
+int main(){
+ 
+    
+    printf("%d\n",sizeof(int));
+    printf("%d\n",sizeof(t));
+    printf("%d",sizeof(t[0]));
+    
+    jparser->tokenlist=(jsmntok_t *)malloc(jparser->nooftokens);
+    
+    if(jparser->tokenlist==NULL){
+        return JSON_INVALID_OBJECT;
+    }
